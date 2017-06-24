@@ -1,0 +1,6 @@
+easy_admin:
+    design:
+        menu:
+             - { entity: 'Employee', icon: 'user', label: 'Employees', params: { sortField: 'createdAt' }, default: true }
+             - { entity: 'Project', icon: 'random', label: 'Projects', params: { sortField: 'createdAt' }, default: true }
+

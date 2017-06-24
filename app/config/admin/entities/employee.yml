@@ -1,0 +1,37 @@
+easy_admin:
+    entities:
+        Employee:
+            class: AppBundle\Entity\Employee
+            label: 'Employees'
+            list:
+                title: 'IBOOD Employees list'
+                fields:
+                    - 'employee'
+                    - 'phone'
+                    - 'position'
+                    - 'nationality'
+                    - { property: 'image', type: 'image', base_path: '%app.path.media%' }
+                    - 'enabled'
+                    - 'createdAt'
+                    - 'updatedAt'
+            show:
+                fields:
+                    - 'employee'
+                    - 'address'
+                    - 'phone'
+                    - 'position'
+                    - 'nationality'
+                    - { property: 'image', type: 'image', base_path: '%app.path.media%' }
+                    - 'enabled'
+                    - 'createdAt'
+                    - 'updatedAt'
+            form:
+                fields:
+                    - { property: 'employee', type: 'text' }
+                    - { property: 'address', type: 'text' }
+                    - { property: 'phone', type: 'text' }
+                    - { property: 'position', type: 'text' }
+                    - { property: 'project', type: 'easyadmin_autocomplete' }
+                    - { property: 'nationality',  type: 'choice', type_options: { choices: { 'Dutch': 'dutch', 'European': 'european','Egyptian': 'egyptian', 'Other':'other' } } }
+                    - { property: 'imageFile', type: 'vich_image' }
+                    - { property: 'enabled', type: 'checkbox' }

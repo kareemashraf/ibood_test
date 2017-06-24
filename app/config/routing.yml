@@ -1,0 +1,16 @@
+_homepage:
+    path: /
+    defaults: { _controller: FrameworkBundle:Redirect:redirect, route: easyadmin, permanent: true }
+
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+admin:
+    resource: "@AppBundle/Controller/AdminController.php"
+    type:     annotation
+    prefix:   /
+    schemes: [http]
+
+

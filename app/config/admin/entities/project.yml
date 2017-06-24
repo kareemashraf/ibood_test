@@ -1,0 +1,25 @@
+easy_admin:
+    entities:
+        Project:
+            class: AppBundle\Entity\Project
+            label: 'Projects'
+            list:
+                title: 'IBOOD Projects list'
+                fields:
+                    - 'project'
+                    - 'enabled'
+                    - 'createdAt'
+                    - 'updatedAt'
+            show:
+                fields:
+                    - 'project'
+                    - 'details'
+                    - 'enabled'
+                    - 'createdAt'
+                    - 'updatedAt'
+            form:
+                fields:
+                    - { property: 'project', type: 'text', label: 'Project Name'  }
+                    - { property: 'employees', type: 'easyadmin_autocomplete' }
+                    - { property: 'details', type: 'ckeditor' }
+                    - { property: 'enabled', type: 'checkbox' }
