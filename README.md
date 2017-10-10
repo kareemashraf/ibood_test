@@ -13,5 +13,6 @@ Kindly download the repository then perform the following steps :
 - login with the default credential as the following :
     - username : admin
     - password : 2eZwc<#F&^3MPj~b
+passwords can be changed throuw the datafixture bundle 
 
 its a very simple project based on symfony3 and Mysql to assign employees to projects
